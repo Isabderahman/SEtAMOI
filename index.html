@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/prototype');
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/logoo-03.png" alt="logo"></a>
+            <ul>
+                <li><a href="#"> Home </a></li>
+                <li><a href="#"> About</a></li>
+                <li><a href="#"> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="second_niv">
+        <div>
+            <h3>SETAMOI</h3>
+            <p style="color: #F2F2F2;"> Spécialiste des
+                infrastructures ferroviaires
+                et de leur maintenance.</p>
+            <a href="#" id="btn">plus d'information</a>
+        </div>
+
+    </div>
+        <div class="zone_de_text_anime">
+            <div class="text first-text">nos différentes activités</div>
+            <div class="text sec-text"> Sécurité</div>
+        </div>
+    </header> 
+    <h2 style="text-align: center; margin-top:20px;">Découvrez nos différentes <span style="color:#F96D00">activités</span> </h2>
+    <main>
+        <div class="container">
+            <div style="background-image: url(img/1.jpg);"><h3>Sécurité</h3></div>
+            <div style="background-image: url(img/6.jpg);"><h3>Location</h3></div>
+            <div style="background-image: url(img/2.jpg);"><h3>Caténaire</h3></div>
+            <div style="background-image: url(img/4.jpg);"><h3>signalisation</h3></div>
+            <div style="background-image: url(img/5.jpg);"><h3>Formation</h3></div>
+        </div>
+    </main>
+    <script>
+        const text = document.querySelector(".sec-text");
+        const textload=()=>{
+            setTimeout(()=>{
+                text.textContent="Sécurité"
+            },0);
+            setTimeout(()=>{
+                text.textContent="Voie"
+            },4000);
+            setTimeout(()=>{
+                text.textContent="signalisation"
+            },8000);
+            setTimeout(()=>{
+                text.textContent="Gestion de l'infra"
+            },12000);
+            setTimeout(()=>{
+                text.textContent="Formation"
+            },16000);
+        }
+        textload()
+        setInterval( textload,20000)
+    </script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Prototype', sans-serif;
+    list-style: none;
+}
+body{
+    background-color: #F2F2F2;
+}
+header{
+    background-image: url(img/background_header.jpg);
+    background-size: cover;
+    height: 80vh;
+    width: 98%;
+    position: relative;
+    left: 1%;
+    top: 1vh;
+    border-radius: 3px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:solid #F2F2F2 ;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    height: 12%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    margin-left: 30px;
+}
+nav a{
+    text-decoration: none;
+    color: #F2F2F2;
+    transition: all 0.3s ease;
+}
+nav a:hover{
+    color: #F96D00;
+}
+nav a img{
+    height: 30px;
+}
+.second_niv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #222831;
+    position: relative;
+    top:15%;
+    left: 10%;
+    height: 30%;
+    width: 90%; 
+    font-size: 30px;  
+}
+.second_niv #btn{
+    background-color: #F2F2F2;
+    text-decoration: none;
+    color: #F96D00;
+    padding: 15px;
+    position: relative;
+    top: 30px;
+    left: 40px;
+    border-radius: 9px;
+    transition: all 0.3s ease;
+}
+.second_niv #btn:hover{
+    background-color: #F96D00;
+    color: #F2F2F2;
+}
+header .zone_de_text_anime{
+    overflow: hidden;
+    height: 20vh;
+    width: 90%;
+    background-color: #F2F2F2;
+    border-radius: 9px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30%;
+    left: 5%;
+}
+ .zone_de_text_anime .text{
+    font-size: 20px;
+    position: relative;
+ }
+ .zone_de_text_anime .sec-text{
+    color: #F96D00;
+    margin-left: 5px;
+ }
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#F2F2F2;
+    border-left:2px solid #222831;
+    animation: animate 4s steps(12) infinite;
+ }
+ main{
+    background-color: #222831;
+    width: 90%;
+    height: 50vh;
+    position: relative;
+    left: 5%;
+    margin-top: 40px;
+ }
+main .container {
+    display: flex;
+    height: 100%;
+    gap: 1rem;
+}
+.container >div{
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all ease 1s;
+}
+.container div h3{
+    opacity: 0;
+    font-size: 30px;
+    color: #F2F2F2;
+    background-color: #f96c0093;
+    padding-top: 30%;
+    transition: all ease 0.3s;
+
+}
+.container div h3:hover{
+    opacity: 1;
+}
+.container >div:hover{
+    flex: 4;
+}
+@media screen and (min-width: 320px) and (max-width: 786px) {
+    main{
+        height: 20vh;
+        background-color: #F2F2F2;
+    }
+	.container{
+        flex-direction: column;
+    }
+    .container div h3{
+        font-size: 20px;
+        padding-top: 10%;
+    }
+}
+ @keyframes animate{
+    40%,60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+ }
+ 
